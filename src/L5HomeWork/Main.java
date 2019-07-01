@@ -1,4 +1,4 @@
-package L5;
+﻿package L5;
 
 public class Main {
     static final int SIZE = 10000000;
@@ -34,7 +34,7 @@ public class Main {
         Thread t1=new Thread(()->{
             for (int i = 0; i <HALF ; i++) {
                 arr3[i]=(float)(arr3[i]*Math.sin(0.2f+i/5)*Math.cos(0.2f+i/5)*Math.cos(0.4f+i/2));
-                System.out.println(arr3[i]+"1");
+                
              }
             });
 
@@ -42,7 +42,7 @@ public class Main {
         Thread t2=new Thread(()->{
             for (int i = 0; i <HALF ; i++) {
                 arr4[i]=(float)(arr4[i]*Math.sin(0.2f+i/5)*Math.cos(0.2f+i/5)*Math.cos(0.4f+i/2));
-                System.out.println(arr4[i]+"2");
+                
             }
             });
         t1.start();
